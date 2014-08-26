@@ -1,14 +1,421 @@
 html, body, div, span, h1, h2, h3, h4, h5, h6, p {
-	margin:0;
-	padding:0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 
 html {
-	background:white;
+	background:#eee;
 }
 
+/**************
+ * Body
+ **************/
 body {
 	max-width: 1280px;
 	margin: 0 auto;
-	background: url('../img/background.png') no-repeat;
+	background: white;
+}
+
+#container {
+	background:url('../img/background.png') no-repeat;
+	background-size:1280px 1007px;
+	overflow: hidden;
+}
+
+/**************
+ * Fonts
+ **************/
+
+.oswald
+{
+	font-family: 'oswald', sans-serif;
+}
+
+.lato {
+	font-family: 'Lato', sans-serif;
+}
+
+.merriweather {
+	font-family: 'Merriweather', serif;
+}
+
+.lora
+{
+	font-family: 'Lora', serif;
+}
+
+/**************
+ * alignment
+ **************/
+.align_right {
+	text-align: right;
+}
+
+/**************
+ * Masthead
+ **************/
+#masthead {
+	
+}
+
+#masthead > h2 {
+
+	/*text*/
+	color:gray;
+	font-family:'Lora', serif;
+	font-size: .90em;
+	font-style: italic;
+	letter-spacing: 0.0625em;
+	text-transform: uppercase;
+}
+
+#masthead > h1{
+	
+	/*text*/
+	color:white;
+	font-family: 'Lato', serif;
+	font-weight: 100;
+	font-size:17em;
+	text-transform: uppercase;
+	line-height: .80em;
+}
+
+/**************
+ * Relatives
+ **************/
+#relatives{
+	
+}
+
+#relatives > h2{
+	
+	/*text*/
+	color:rgb(253,205,132);
+	font-family:'Lora', serif;
+	font-size: 1em;
+	font-weight: 100;
+	letter-spacing: 0.0625em;
+	text-transform: uppercase;
+}
+
+#relatives > h1{
+
+	/*text*/
+	color:rgb(253,205,132);
+	font-family: 'Oswald', sans-serif;
+	font-size: 4.5em;
+	text-transform: uppercase;
+}
+
+#relatives > p {
+	
+	/*text*/
+	font-family: 'Merriweather', serif;
+	font-size:1.5em;
+	font-weight: 100;
+
+}
+
+/**************
+ * Box Model
+ **************/
+#box_model {
+	
+}
+
+#box_model > h1 {
+
+	/*text*/
+	color: rgb(95,93,102);
+	font-family: 'Lora', serif;
+	font-size: 2.3em;
+	font-style: italic;
+	font-weight: 700;
+	text-align: center;
+}
+
+#box_model > p {
+
+	/*text*/
+	color: rgb(95,93,102);
+	font-family: 'Lato', sans-serif;
+	font-size: 1.2em;
+	text-align: center;
+}
+
+/**************
+ * Staying Afloat
+ **************/
+#staying_afloat{
+
+}
+
+#staying_afloat > h1 {
+	/*text*/
+	color: rgb(36,122,90);
+	font-family:'Oswald',sans-serif;
+	font-size: 1.3em;
+	text-align: right;
+}
+#staying_afloat > p {
+	/*text*/
+	font-family: 'Lato', sans-serif;
+	font-size: .9em;
+	text-align: right;
+}
+
+/**************
+ * List Style Bullets
+ **************/
+#list_style_bullets{
+
+}
+
+#list_style_bullets > h1{
+	/*text*/
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.1em;
+	line-height: 1.2em;
+}
+
+#list_style_bullets > h1 > span{
+	/*text*/
+	font-family:'Lato',sans-serif;
+	display:inline-block;
+	text-transform: lowercase;
+	font-variant: small-caps;
+}
+
+#list_style_bullets h2 {
+	/*text*/
+	font-family:'Oswald', sans-serif;
+	font-size: 7em;	
+}
+
+#list_style_bullets h3 {
+	/*text*/
+	font-family:'Oswald', sans-serif;
+	font-size: 5.3em;
+	
+}
+
+#list_style_bullets h4 {
+	
+	/*text*/
+	font-family:'Oswald', sans-serif;
+	font-size: 3em;
+	
+}
+
+
+#list_style_bullets h5 {
+	/*text*/
+	font-family:'Oswald', sans-serif;
+	font-size: 2em;
+	
+}
+
+#list_style_bullets span {
+	text-transform: uppercase;
+}
+
+/**************
+ * Famous Blocks
+ **************/
+#famous_blocks{
+	background:rgb(82,71,65);
+}
+
+#famous_blocks > h2 {
+	/*text*/
+	color:rgb(256,256,256);
+	font-family:'Oswald',sans-serif;
+	font-size: 3em;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#famous_blocks > p {
+	/*text*/
+	color:rgb(256,256,256);
+	font-family:'Merriweather', serif;
+	font-size:1.5em;
+	font-weight:300;
+}
+
+#famous_blocks > h3 {
+	/*text*/
+	color:rgb(113,98,90);
+	font-family:'Merriweather', serif;
+	font-weight: lighter;
+	font-size: 1.5;
+}
+/**************
+ * Border Bottom
+ **************/
+#border_bottom{
+
+}
+
+#border_bottom > h1{
+	/*text*/
+	display:inline-block;
+	font-family: 'Oswald', sans-serif;
+	font-size: 5em;
+	text-transform: uppercase;
+	
+	/* borders */
+	border-bottom:solid black 20px;
+}
+
+#border_bottom > h2 {
+
+	/*text*/
+	display:inline-block;
+	font-family:'Oswald', sans-serif;
+	font-size:2.465em;
+	
+	/* margin and padding */
+	margin-bottom:10px;
+	padding-top:10px;
+	padding-bottom:10px;
+
+	/* borders */
+	border-bottom: solid black 3px;
+}
+
+#border_bottom > p {
+	/*text*/
+	font-family: 'Merriweather', serif;
+	font-size:1.5em;
+	font-weight: 100;
+}
+
+#border_bottom > p > span {
+	font-weight:bold;
+}
+
+#border_bottom > p > img {
+	display:inline-block;
+	vertical-align: middle;
+}
+/**************
+ * Transformers
+ **************/
+#transformers{
+	background-color:rgb(58,131,187);
+	width:25%;
+}
+
+#transformers > h2 {
+	color:white;
+	font-family: 'Oswald', sans-serif;
+	font-size:2em;
+	text-transform: uppercase;
+	font-weight:200;
+}
+#transformers > h3 {
+	color:white;
+	font-family:'Oswald',sans-serif;
+	text-transform:uppercase;
+	font-size:1.4em;
+	font-weight: 200;
+}
+
+#transformers > p {
+	color:white;
+	font-family: 'Lora', serif;
+	font-style:italic;
+	font-size:.9;
+	line-height: 1.5em;
+}
+
+
+/**************
+ * Overflow
+ **************/
+#overflow{
+
+}
+
+#overflow > p {
+	color: rgb(98,111,119);
+	font-family:'Lora', serif;
+	font-style: italic;
+}
+
+#overflow > .p_1 {
+	display:block;
+	width:75%;
+	float:right;
+	text-align: right;
+
+	-webkit-transform: rotate(2deg);
+	-moz-transform: rotate(2deg);
+	-o-transform: rotate(2deg);
+	writing-mode: lr-tb;
+
+	margin-bottom: 30px;
+}
+
+#overflow > .p_2 {
+	display:block;
+	width:75%;
+	clear:right;
+	float:left;
+
+	-webkit-transform: rotate(359deg);
+	-moz-transform: rotate(359deg);
+	-o-transform: rotate(359deg);
+	writing-mode: lr-tb;
+	margin-bottom: 30px;
+}
+
+#overflow > .p_3 {
+	display:block;
+	width:68%;
+	clear:both;
+	float:left;
+	margin-left:15%;
+	-webkit-transform: rotate(1deg);
+	-moz-transform: rotate(1deg);
+	-o-transform: rotate(1deg);
+	writing-mode: lr-tb;
+}
+
+/**************
+ * Footer
+ **************/
+#footer{
+	clear:both;
+	margin-top:30px;
+}
+
+#footer .footer_info {
+	float:left;
+	font-family: 'Lato', sans-serif;
+	color:#bbb;
+}
+
+#footer .address {
+	float:right;
+	font-family:'Merriweather', serif;
+	font-weight: lighter;
+	font-size: .9em;
+	text-align: right;
+	color:#bbb;
+}
+
+#footer .footer_info span {
+	color:#555;
+}
+
+
+#footer p {
+
+
 }
